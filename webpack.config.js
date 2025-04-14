@@ -1,10 +1,11 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   target: 'web',
   mode: 'development',
 
-  entry: path.resolve(__dirname, 'src/scripts', 'index.js'),
+  entry: path.resolve(__dirname, 'src/scripts/index.js'),
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
@@ -18,4 +19,11 @@ module.exports = {
     open: true,
     liveReload: true,
   },
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'index.html'),
+      favicon: path.resolve(__dirname, 'src/assets/scissors.svg'),
+    }),
+  ],
 }
