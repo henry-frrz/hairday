@@ -1,7 +1,10 @@
 'use strict'
 
+// CSS
+import '../styles/index.css'
+
 // DayJS configuration
 import '../libs/dayjs'
 
-// CSS
-import '../styles/index.css'
+// Modules
+import './modules/index'
