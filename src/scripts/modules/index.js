@@ -1,1 +1,5 @@
 import './form/submit'
+import './page-load'
+import './form/hours-load'
+import './form/schedule/load'
+import './form/day-change'
