@@ -1,6 +1,7 @@
 import dayjs from 'dayjs'
 
 import openingHours from '../../../utils/opening-hours'
+import hoursClick from './hours-click'
 
 const hours = document.querySelector('#hours')
 
@@ -47,6 +48,8 @@ const hoursLoad = date => {
 
     hours.append(hourItem)
   })
+
+  hoursClick()
 }
 
 const addPeriodHeader = period => {
