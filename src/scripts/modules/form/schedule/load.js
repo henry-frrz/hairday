@@ -11,7 +11,7 @@ const scheduleDay = async () => {
 
   scheduleShow(dailySchedules)
 
-  hoursLoad(date)
+  hoursLoad({ date, dailySchedules })
 }
 
 export default scheduleDay
