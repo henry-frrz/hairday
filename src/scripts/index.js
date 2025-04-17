@@ -11,3 +11,4 @@ export * from './form/hours-click'
 
 export * from './schedule/load'
 export * from './schedule/show'
+export * from './schedule/remove'

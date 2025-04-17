@@ -13,7 +13,7 @@ export const scheduleShow = dailySchedules => {
     const item = document.createElement('li')
     const hour = dayjs(schedule.when).hour()
 
-    item.id = schedule.id
+    item.dataset.id = schedule.id
 
     item.innerHTML = `
       <strong>${dayjs(schedule.when).format('HH:mm')}</strong>

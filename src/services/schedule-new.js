@@ -7,7 +7,7 @@ export const scheduleNew = async ({ id, name, when }) => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ id, name, when }),
+      body: JSON.stringify({ id: String(id), name, when }),
     })
   } catch (error) {
     alert('Não foi possível agendar. Tente novamente mais tarde.')
