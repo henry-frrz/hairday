@@ -1,4 +1,4 @@
-import scheduleDay from './form/schedule/load'
+import { scheduleDay } from './index'
 
 document.addEventListener('DOMContentLoaded', () => {
   scheduleDay()

@@ -1,4 +1,4 @@
-const openingHours = [
+export const openingHours = [
   '09:00',
   '10:00',
   '11:00',
@@ -13,5 +13,3 @@ const openingHours = [
   '20:00',
   '21:00',
 ]
-
-export default openingHours

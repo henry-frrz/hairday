@@ -4,7 +4,7 @@ const periodMorning = document.querySelector('#period-morning')
 const periodAfternoon = document.querySelector('#period-afternoon')
 const periodNight = document.querySelector('#period-night')
 
-const scheduleShow = dailySchedules => {
+export const scheduleShow = dailySchedules => {
   periodMorning.textContent = ''
   periodAfternoon.textContent = ''
   periodNight.textContent = ''
@@ -29,5 +29,3 @@ const scheduleShow = dailySchedules => {
     if (hour < 21) return periodNight.append(item)
   })
 }
-
-export default scheduleShow

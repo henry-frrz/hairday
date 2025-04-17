@@ -1,10 +1,9 @@
-import scheduleFetchByDay from '../../../../services/schedule-fetch-by-day'
-import hoursLoad from '../hours-load'
-import scheduleShow from './show'
+import { scheduleFetchByDay } from '../../services/schedule-fetch-by-day'
+import { hoursLoad, scheduleShow } from '../index'
 
 const selectedDate = document.querySelector('#date')
 
-const scheduleDay = async () => {
+export const scheduleDay = async () => {
   const date = selectedDate.value
 
   const dailySchedules = await scheduleFetchByDay({ date })
@@ -13,5 +12,3 @@ const scheduleDay = async () => {
 
   hoursLoad({ date, dailySchedules })
 }
-
-export default scheduleDay

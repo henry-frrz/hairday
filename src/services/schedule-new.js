@@ -1,6 +1,6 @@
-import apiConfig from './api-config'
+import { apiConfig } from './api-config'
 
-const scheduleNew = async ({ id, name, when }) => {
+export const scheduleNew = async ({ id, name, when }) => {
   try {
     await fetch(`${apiConfig.baseURL}/schedules`, {
       method: 'POST',
@@ -13,5 +13,3 @@ const scheduleNew = async ({ id, name, when }) => {
     alert('Não foi possível agendar. Tente novamente mais tarde.')
   }
 }
-
-export default scheduleNew

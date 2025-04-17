@@ -1,4 +1,4 @@
-const hoursClick = () => {
+export const hoursClick = () => {
   const hours = document.querySelectorAll('.hour-available')
 
   hours.forEach(available => {
@@ -11,5 +11,3 @@ const hoursClick = () => {
     })
   })
 }
-
-export default hoursClick

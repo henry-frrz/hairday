@@ -1,10 +1,13 @@
-'use strict'
-
-// CSS
 import '../styles/index.css'
 
-// DayJS configuration
 import '../libs/dayjs'
 
-// Modules
-import './modules/index'
+export * from './page-load'
+
+export * from './form/submit'
+export * from './form/day-change'
+export * from './form/hours-load'
+export * from './form/hours-click'
+
+export * from './schedule/load'
+export * from './schedule/show'

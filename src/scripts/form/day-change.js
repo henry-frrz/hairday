@@ -1,4 +1,4 @@
-import scheduleDay from './schedule/load'
+import { scheduleDay } from '../index'
 
 const selectedDate = document.querySelector('#date')
 

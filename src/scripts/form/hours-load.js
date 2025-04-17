@@ -1,11 +1,11 @@
 import dayjs from 'dayjs'
 
-import openingHours from '../../../utils/opening-hours'
-import hoursClick from './hours-click'
+import { openingHours } from '../../utils/opening-hours'
+import { hoursClick } from '../index'
 
 const hours = document.querySelector('#hours')
 
-const hoursLoad = ({ date, dailySchedules }) => {
+export const hoursLoad = ({ date, dailySchedules }) => {
   hours.textContent = ''
 
   const unavailableHours = dailySchedules.map(schedule => {
@@ -67,5 +67,3 @@ const addPeriodHeader = period => {
 
   hours.append(periodHeader)
 }
-
-export default hoursLoad
